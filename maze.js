@@ -1,8 +1,8 @@
-window.onload = function(){
-	$("boundary1").onmouseover = overBoundary;
-};
-
-function overBoundary(){
-	//$("boundary1").style.backgroundColor = "#ff8888";
-	$("boundary1").addClassName("youlose");
+window.onload = function() {
+    $("start").onclick = startClick;
+    $("end").onmouseover = overEnd;
+    var boundaries = $$("div#maze div.boundary");
+    for (var i = 0; i < boundaries.length; i++) {
+        boundaries[i].onmouseover = overBoundary;
+    }
 }
