@@ -3,6 +3,6 @@ window.onload = function(){
 };
 
 function overBoundary(){
-	//$("boundary1").style.backgroundColor = "#FF0000";
+	//$("boundary1").style.backgroundColor = "#ff8888";
 	$("boundary1").addClassName("youlose");
 }
